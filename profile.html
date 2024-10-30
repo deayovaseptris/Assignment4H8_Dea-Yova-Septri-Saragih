@@ -1,0 +1,83 @@
+<!-- Nama: Dea Yova Septri Saragih -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img class="profile-image" src="profile.jpg" alt="Profile Picture" />
+      <div class="profile-details">
+        <p class="profile-name">Dea Yova Septri Saragih</p>
+        <p class="profile-role">Front End Designer</p>
+        <div class="profile-buttons">
+          <button class="edit-btn" onclick="tampilkanData()">Edit</button>
+          <a href="Dea Yova Septri Saragih_CV.pdf" target="_blank">
+            <button class="resume-btn">Resume</button>
+          </a>
+        </div>
+      </div>
+      <div class="profile-info">
+        <div class="info-item">
+          <div class="availability">
+            <div class="label">Availability</div>
+            <div class="value">Full Time</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="usia">
+            <div class="label">Usia</div>
+            <div class="value">19</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="lokasi">
+            <div class="label">Lokasi</div>
+            <div class="value">Jakarta</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="pengalaman">
+            <div class="label">Pengalaman</div>
+            <div class="value">2</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="email">
+            <div class="label">Email</div>
+            <div class="value">email@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="tutupModal()">&times;</span>
+        <h2>Section Form</h2>
+        <form onsubmit="saveData(event)">
+          <label>Name</label>
+          <input type="text" id="name" /><br />
+          <label>Role</label>
+          <input type="text" id="role" /><br />
+          <label>Availability</label>
+          <input type="text" id="availability" /><br />
+          <label>Usia</label>
+          <input type="text" id="age" /><br />
+          <label>Lokasi</label>
+          <input type="text" id="location" /><br />
+          <label>Years Experience</label>
+          <input type="text" id="experience" /><br />
+          <label>Email</label>
+          <input type="email" id="email" /><br />
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
